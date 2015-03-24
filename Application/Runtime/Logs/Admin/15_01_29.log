@@ -1,0 +1,386 @@
+[ 2015-01-29T17:22:51+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0008s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523371 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003598s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004187s ]
+
+[ 2015-01-29T17:22:51+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0006s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523371 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.002932s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003477s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2015-01-29T17:22:51+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523371 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003207s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003769s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2015-01-29T17:22:53+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0006s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523373 ) [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.004270s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004852s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weixin_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `weixin_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `weixin_admin` SET `last_time`='1422523373',`last_ip`='110.184.203.148' WHERE `id` = 2 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2015-01-29T17:22:54+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523374 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003564s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004246s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `weixin_menu` WHERE (  `pid` = 0 ) AND `display` = 1 ORDER BY ordid  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2015-01-29T17:22:54+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=panel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523374 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003083s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003699s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant PIN_VERSION - assumed 'PIN_VERSION' /home/maoyan.in/public_html/Application/Admin/Action/IndexAction.class.php 第 44 行.
+NOTIC: [8] Use of undefined constant PIN_RELEASE - assumed 'PIN_RELEASE' /home/maoyan.in/public_html/Application/Admin/Action/IndexAction.class.php 第 44 行.
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/maoyan.in/public_html/Application/Admin/Action/IndexAction.class.php 第 49 行.
+NOTIC: [2] mysql_get_server_info(): No such file or directory /home/maoyan.in/public_html/Application/Admin/Action/IndexAction.class.php 第 49 行.
+NOTIC: [2] mysql_get_server_info(): A link to the server could not be established /home/maoyan.in/public_html/Application/Admin/Action/IndexAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `weixin_item` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_item` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_item` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_item_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_item_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_item_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2015-01-29T17:22:54+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523374 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003331s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weixin_menu` WHERE `often` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Undefined index: data /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/61fadfd8cde17e59c5271779ef7fd47c.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2015-01-29T17:22:59+08:00 ] 110.184.203.148 /index.php?g=admin&m=item_order&a=index&status=3&menuid=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523379 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003622s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004247s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `weixin_menu` WHERE (  `pid` = 296 ) AND `display` = 1 ORDER BY ordid  [ RunTime:0.0004s ]
+NOTIC: [2] Illegal string offset 'module_name' /home/maoyan.in/public_html/Application/Common/Action/backendAction.class.php 第 26 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/maoyan.in/public_html/Application/Common/Action/backendAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: module_name /home/maoyan.in/public_html/Application/Common/Action/backendAction.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: spid /home/maoyan.in/public_html/Application/Admin/Action/ItemOrderAction.class.php 第 74 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `weixin_item_order` WHERE `status` = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `weixin_item_order` WHERE `status` = '3' ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: module_name /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined index: action_name /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined variable: module /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [8] Undefined variable: var /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [8] Undefined index: data /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined index: name /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined variable: sm /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2015-01-29T17:22:59+08:00 ] 110.184.203.148 /index.php?g=admin&m=item_order&a=index&status=3&menuid=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0009s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523379 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003711s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004328s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `weixin_menu` WHERE (  `pid` = 296 ) AND `display` = 1 ORDER BY ordid  [ RunTime:0.0004s ]
+NOTIC: [2] Illegal string offset 'module_name' /home/maoyan.in/public_html/Application/Common/Action/backendAction.class.php 第 26 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/maoyan.in/public_html/Application/Common/Action/backendAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: module_name /home/maoyan.in/public_html/Application/Common/Action/backendAction.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: spid /home/maoyan.in/public_html/Application/Admin/Action/ItemOrderAction.class.php 第 74 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `weixin_item_order` WHERE `status` = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `weixin_item_order` WHERE `status` = '3' ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: module_name /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined index: action_name /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined variable: module /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [8] Undefined variable: var /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/maoyan.in/public_html/ThinkPHP/Common/functions.php 第 1041 行.
+NOTIC: [8] Undefined index: data /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined index: name /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 26 行.
+NOTIC: [8] Undefined variable: sm /home/maoyan.in/public_html/Application/Runtime/Cache/Admin/aebee3b24015acbc04f80579143bacf0.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2015-01-29T17:23:26+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422523406 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003698s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004551s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2015-01-29T20:26:21+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0008s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422534381 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.004152s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004936s ]
+
+[ 2015-01-29T20:26:21+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0007s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422534381 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003491s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004060s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2015-01-29T20:26:22+08:00 ] 110.184.203.148 /index.php?g=admin&m=index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `weixin_ipban` [ RunTime:0.0009s ]
+SQL: DELETE FROM `weixin_ipban` WHERE ( expires_time <> 0 AND expires_time < 1422534381 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weixin_ipban` WHERE `type` = 'ip' AND `name` = '110.184.203.148' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\CheckIpbanBehavior [ RunTime:0.003636s ]
+INFO: Run Common\Behavior\LoadLangBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004221s ]
+SQL: SHOW COLUMNS FROM `weixin_menu` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `weixin_item_order` [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+

@@ -1,0 +1,37 @@
+<!--编辑禁止IP-->
+<div class="dialog_content">
+    <form id="info_form" name="info_form" action="{:u('item/purchaseEdit')}" method="post">
+    <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+        <tr>
+            <th width="80">名称 :</th>
+            <td>{$info.title}</td>
+        </tr>
+        <tr>
+            <th width="100">数量 :</th>
+            <td><input type="text" name="number" id="number" class="input-text" size="10" value="{$info.number}"></td>
+        </tr>
+        <tr>
+            <th width="100">价格 :</th>
+            <td><input type="text" name="price" id="price" class="input-text" size="10" value="{$info.price}"></td>
+        </tr>
+    </table>
+    <input type="hidden" name="id" value="{$info.id}" />
+    </form>
+</div>
+<script>
+$(function(){
+    $.formValidator.initConfig({formid:"info_form",autotip:true});
+    
+    
+    $('#info_form').ajaxForm({success:complate,dataType:'json'});
+    function complate(result){
+        if(result.status == 1){
+            $.dialog.get(result.dialog).close();
+            $.pinphp.tip({content:result.msg});
+            window.location.reload();
+        } else {
+            $.pinphp.tip({content:result.msg, icon:'alert'});
+        }
+    }
+});
+</script>

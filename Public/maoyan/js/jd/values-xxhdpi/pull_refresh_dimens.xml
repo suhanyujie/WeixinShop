@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- 下拉刷新 -->
+	<dimen name="pull_to_refresh_speed_left_margin">30dp</dimen>
+	<dimen name="pull_to_refresh_tips_left_margin">0.5dp</dimen>
+</resources>

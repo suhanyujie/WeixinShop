@@ -1,0 +1,102 @@
+<include file="public:header" />
+<script charset="utf-8" src="__PUBLIC__/js/jquery.js" type="text/javascript"></script>
+<!--添加商品-->
+<div class="subnav">
+    <h1 class="title_2 line_x">采购商品入库</h1>
+</div>
+<form id="info_form" action="{:u('item/purchase')}" method="post" enctype="multipart/form-data">
+    <div class="pad_lr_10">
+        <div class="col_tab">
+            <ul class="J_tabs tab_but cu_li">
+                <li class="current">基本信息</li>
+            </ul>
+            <div class="J_panes">
+                <div class="content_list pad_10">
+                    <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+                        <tr>
+                            <th>商品条码 :</th>
+                            <td>
+                                <input type="text" name="barcode" id="J_barcode" class="input-text" size="60">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>商品进货数量 :</th>
+                            <td>
+                                <input type="text" name="number" id="J_number" class="input-text" size="60">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>商品进货价格 :</th>
+                            <td>
+                                <input id='J_price' onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9.]/g,'')" type="text" name="price" class="input-text" size="10">元</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mt10">
+                <input type="submit" value="{:L('submit')}" class="btn btn_submit">
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="menuid" value="{$menuid}" />
+    <input type="hidden" name="goods_id" id="J_goods_id" value="" />
+</form>
+<include file="public:footer" />
+<script type="text/javascript">
+$(function() {
+    $('ul.J_tabs').tabs('div.J_panes > div');
+    //自动获取标签
+    $('#J_barcode').on('blur', function(e) {
+        if ($.trim($(this).val()) != '') {
+            var barcode = $.trim($('#J_barcode').val());
+            if (barcode == '') {
+                $.pinphp.tip({
+                    content: lang.article_barcode_isempty,
+                    icon: 'alert'
+                });
+                return false;
+            }
+            $.getJSON('{:U("item/ajax_goodinfo")}', {
+                barcode: barcode
+            }, function(result) {
+                if (result.status == 1) {
+                    $('#J_goods_id').val(result.data);
+                    $.pinphp.tip({
+                        content: result.msg
+                    });
+                } else {
+                    $.pinphp.tip({
+                        content: result.msg
+                    });
+                }
+            });
+        }
+    });
+    $.formValidator.initConfig({
+        formid: "info_form",
+        autotip: true
+    });
+    $("#J_goods_id").formValidator({
+        onshow: '无法识别条码，请先添加商品',
+        onfocus: '无法识别条码，请先添加商品'
+    }).inputValidator({
+        min: 1,
+        onerror: '无法识别条码，请先添加商品'
+    });
+    $("#J_price").formValidator({
+        onshow: '请填写商品进货价格',
+        onfocus: '请填写商品进货价格'
+    }).inputValidator({
+        min: 1,
+        onerror: '请填写商品进货价格'
+    });
+    $("#J_number").formValidator({
+        onshow: '请填写商品进货数量',
+        onfocus: '请填写商品进货数量'
+    }).inputValidator({
+        min: 1,
+        onerror: '请填写商品进货数量'
+    });
+    //$("#J_user_price").formValidator({onshow:'请填写会员价格，-1代表默认价格'});
+});
+</script>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="off_network">网络请求失败，请检查您的网络设置</string>
+
+</resources>
+

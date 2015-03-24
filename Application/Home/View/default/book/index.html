@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file="public:headtop" />
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+<include file="public:head" />
+<div class="banner">
+    <div id="slider" class="slider" style="overflow: hidden; visibility: visible; list-style: none outside none; position: relative;">
+        <ul id="sliderlist" class="sliderlist" style="position: relative; overflow: hidden; transition: left 600ms ease 0s; width: 1800px; left: -1200px;">
+        <volist name='ad' id='vo'>
+            <li style="float: left; display: block; width: 600px;">
+                <span>
+                   <a href="{$vo.url}"> <img title="{$vo.desc}" width="100%" src="data/upload/advert/{$vo.content}"></a>
+                </span>
+            </li>
+        </volist>
+      
+        </ul>
+        <div id="pagenavi">
+         <volist name='ad' id='vo' key='k' >
+           <a <if condition='$k eq 1'>class="active"</if> href="javascript:void(0);">{$k}</a>
+        </volist>
+        </div>
+    </div>
+</div>
+<div class="s_bottom"></div>
+<script type="text/javascript">
+$(function(){
+	$("div.module_special .wrap .major ul.list li:last-child").addClass("remove_bottom_line");
+});
+var active=0,
+	as=document.getElementById('pagenavi').getElementsByTagName('a');
+	
+for(var i=0;i<as.length;i++){
+	(function(){
+		var j=i;
+		as[i].onclick=function(){
+			t2.slide(j);
+			return false;
+		}
+	})();
+}
+var t2=new TouchSlider({id:'sliderlist', speed:600, timeout:6000, before:function(index){
+		as[active].className='';
+		active=index;
+		as[active].className='active';
+	}});
+</script>
+
+
+<div id="content">
+    <div class="module_special tbr">
+        <h2 class="common_title veins2">
+            <div class="ornament1"></div>
+            <div class="ornament2"></div>
+            <span class="ico1">
+                <span class="ico2">全部分类</span>
+            </span>
+        </h2>
+        <div class="wrap">
+            <div class="wrap_child">
+                <div class="major">
+                   <ul class="list">
+                     <volist name="item_cates" id="item">
+                      <li style="width:100%; margin-top:5px; margin-bottom:0px;">
+              	       
+                        <div class="good_content">
+                            <h3 style=" font-size:16px;font-weight:bold; line-height:inherit;"><a href="{:U('Cate/showCategoryProducts',array('cid'=>$item['id']))}">{$item.name}</a></h3>
+                            <div class="fl_ss"><if condition="$item['sub_cates'] neq ''"><a href="javascript:void(0)"><div class="fl_ss_s">显示栏目》</div></a></if>
+                               <ul class="fl_sss" style="display:none;">
+                                <volist name="item['sub_cates']" id="subs">
+                                 <li ><a href="{:U('Cate/showCategoryProducts',array('cid'=>$subs['id']))}">{$subs.name}</a></li>
+                               </volist>
+                               </ul>
+                           </div>
+                        </div>             
+                      </li>
+                      </volist>
+                   </ul>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$(".fl_ss>a").click(function(){
+		var obj = $(this).parent().children("ul.fl_sss");
+		if(obj.css('display')=='none'){
+			$("ul.fl_sss").hide();
+			obj.fadeIn();
+			$(this).children("div.fl_ss_s").removeClass("fl_ss_s").addClass("fl_ss_up");
+			}else{
+			obj.fadeOut();
+			$(this).children("div.fl_ss_up").removeClass("fl_ss_up").addClass("fl_ss_s");
+			}
+		})
+	}); 
+	</script> 
+<include file="public:footer" />
+
+
+</body>
+</html>

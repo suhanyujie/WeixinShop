@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{$page_seo.title}</title>
+    <meta name="keywords" content="{$page_seo.keywords}" />
+    <meta name="description" content="{$page_seo.description}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=0.5,initial-scale=1.0,maximum-scale=2.0,user-scalable=0" />
+    <meta content="telephone=yes" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/maoyan/css/main.css?v=<php>echo time();</php>">
+    <script type="text/javascript" src="__PUBLIC__/maoyan/js/zepto.js"></script>
+</head>
+<body>
+<div id="page-contents">
+    <div id="header" class="clear clearfix">
+        <div class="title-fr">订单详情</div>
+    </div>
+    <div id="header-placeholder">&nbsp;</div>
+    <div id="content" class="clear clearfix">
+        <div class="blank20"></div>
+        <div class="order_detail">
+            <div class="item"><span class="label">订单状态</span><switch name="order.status" >
+                             <case value="1">待付款</case>
+                             <case value="2">待发货</case>
+                             <case value="3">待收货</case>
+                            <default />完成
+                     </switch></div>
+            <div class="item"><span class="label">订单号码</span>{$order.orderId}</div>
+            <div class="item"><span class="label">下单时间</span>{$order.add_time|date='Y-m-d H:i:s',###}</div>
+            <div class="item last"><span class="label">订单金额</span>{$order.order_sumPrice}</div>
+        </div>
+        <div class="blank20"></div>
+        <div class="order-product">
+            <volist name='item_detail' id='item' >
+            <div class="item clear clearfix">
+                <div class="img"><img src="{:attach(get_thumb($item['img'], '_s'), 'item')}" width="50"></div>
+                <div class="info">
+                    <div class="title">
+                        <a href="{:U('Item/index', array('id'=>$item['itemId']))}">{$item.title}</a>
+                    </div>
+                    <div class="detail">
+                        <span>数量:<strong>{$item.quantity}</strong></span>
+                        <span>价格:<strong>¥{$item.price}</strong></span>
+                    </div>
+                </div>
+            </div>
+           </volist>   
+        </div>
+        <div class="blank20"></div>
+        <div class="order_detail">
+            <div class="item"><span class="label">订单运费</span><if condition='$order.freetype eq 0' >卖家包邮 <else /><span>¥{$order.freeprice}</span></if></div>
+            <div class="item"><span class="label">配送快递</span><if condition="$order.userfree eq '0'">无需快递<elseif condition="$order.userfree neq '' and $order.userfree neq '0' " />{$order.userfree}<else />-</if></div>
+            <div class="item"><span class="label">快递编号</span><if condition="$order.freecode eq ''">-<else />{$order.freecode}</if></div>
+            <div class="item"><span class="label">发货时间</span><if condition="$order.fahuo_time eq ''">-<else />{$order.fahuo_time|date='Y-m-d H:i:s',###}</if></div>
+            <div class="item last"><span class="label">收货地址</span>{$order.address_name}, &nbsp;{$order.mobile}, {$order.address}</div>
+        </div>
+    </div>
+    <div class="detail-bot">
+        <div class="buy"><span class="nowbuy back">返回</span>
+        <if condition='$order.status eq 1' >
+            &nbsp;&nbsp;<a href="{:U('Order/cancelOrder',array('orderId'=>$order['orderId']))}" id="order118_action_cancel"><span class="nowbuy">取消订单</span></a>
+            &nbsp;&nbsp;<a class="order_pay" href="{:U('Order/pay',array('orderId'=>$order['orderId']))}" id="order118_action_pay"><span class="nowbuy pay">付款</span></a>
+        </if>
+        <if condition='$order.status eq 3' >
+            &nbsp;&nbsp;<a href="{:U('Order/confirmOrder',array('orderId'=>$order['orderId']))}" id="order118_action_cancel"><span class="nowbuy">确认收货</span></a>
+        </if>
+        </div>
+    </div>
+    <div class="bot_nav_placeholder"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+    $('.detail-bot .back').click(function() {
+        history.back();
+    });
+});
+</script>
+</body>
+</html>
